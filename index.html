@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .box1{
+        .box1 {
             width: 256px;
             height: 256px;
             margin: auto auto;
@@ -14,20 +15,40 @@
             animation: run 1s steps(6) infinite;
         }
 
-        /* 创建关键帧 */
         @keyframes run {
-            from{
+            from {
                 background-position: 0 0;
             }
 
-            /* 背景图片会默认填充 */
-            to{
+            to {
                 background-position: -1536px 0;
             }
         }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            text-align: center;
+            line-height: 240px;
+            background-color: yellow;
+            border: 5px #2378ad solid;
+        }
+
+        .p1 {
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            color: red;
+        }
     </style>
 </head>
+
 <body>
     <div class="box1"></div>
+    <div class="box2">
+        <p class="p1">沙雕陈灶煌</p>
+    </div>
 </body>
+
 </html>
